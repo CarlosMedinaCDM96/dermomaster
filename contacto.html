@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Dermo Máster</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+    <a href="index.html" style="text-decoration: none;">
+        <div class="logo">DERMO MÁSTER</div>
+    </a>
+    
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Másteres</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Hablemos de tu futuro</h1>
+            <p>¿Tienes dudas sobre los créditos ECTS o el temario? Nuestro equipo médico te asesora.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellidos</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Dr/Dra. Nombre Apellido" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email profesional</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@medico.es" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Consulta médica o académica</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="legal" required>
+                        <label for="legal">Acepto la <a href="legal/privacidad.html">política de privacidad</a></label>
+                    </div>
+
+                    <button type="submit" class="button button--primary" style="width: 100%;">Enviar solicitud</button>
+                </form>
+
+                <div id="successMessage" style="display:none; text-align: center; padding: 20px;">
+                    <h3 style="color: var(--secondary-teal);">¡Mensaje enviado!</h3>
+                    <p>En breve un asesor académico se pondrá en contacto contigo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dermo Máster. Proyecto de prácticas.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

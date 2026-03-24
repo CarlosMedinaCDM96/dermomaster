@@ -1,0 +1,346 @@
+/* VARIABLES DE COLOR Y FUENTES (Tu Brand Kit) */
+:root {
+    --primary-navy: #1A2B48;
+    --secondary-teal: #20B2AA;
+    --action-coral: #FF6B6B;
+    --bg-gray: #F4F7F6;
+    --text-dark: #333333;
+    --font-titles: 'Montserrat', sans-serif;
+    --font-text: 'Inter', sans-serif;
+}
+
+/* RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--text-dark);
+    background-color: var(--bg-gray);
+    line-height: 1.6;
+}
+
+/* CABECERA (Header) */
+.header {
+    background-color: #ffffff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-family: var(--font-titles);
+    font-size: 24px;
+    color: var(--primary-navy);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--primary-navy);
+    font-weight: 600;
+}
+
+.nav-menu a:hover {
+    color: var(--secondary-teal);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background-color: var(--primary-navy);
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-family: var(--font-titles);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.placeholder-img {
+    background-color: var(--secondary-teal);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* COMPONENTES UI: BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--action-coral);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #e55a5a;
+}
+
+/* SECCIÓN BENEFICIOS (Grid Cards) */
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 5%;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--secondary-teal);
+}
+
+.card h3 {
+    font-family: var(--font-titles);
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--text-dark);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: var(--secondary-teal);
+    text-decoration: none;
+}
+
+/* DISEÑO RESPONSIVE (Móviles) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .placeholder-img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .placeholder-img {
+        margin-top: 30px;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* DISEÑO PÁGINA PRODUCTO */
+.product-page {
+    display: flex;
+    gap: 40px;
+    padding: 40px 5%;
+}
+
+.product-info { flex: 2; }
+.product-sidebar { flex: 1; }
+
+.sticky-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+    border: 1px solid #eee;
+}
+
+.price { font-size: 32px; font-weight: bold; color: var(--primary-navy); }
+
+/* ESTILO FAQs (Acordeón) */
+details { background: white; margin-bottom: 10px; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
+summary { font-weight: bold; cursor: pointer; color: var(--primary-navy); }
+
+/* ESTILO FORMULARIO */
+.contact-container { max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 12px; }
+.form-group { margin-bottom: 20px; display: flex; flex-direction: column; }
+.form-group label { font-weight: 600; margin-bottom: 8px; }
+.form-group input, .form-group textarea { padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; }
+.form-group input:focus { border-color: var(--secondary-teal); outline: none; }
+.form-legal { margin-bottom: 20px; font-size: 14px; }
+
+/* CABECERA DE SECCIONES */
+.catalog-header {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #ffffff;
+}
+
+.catalog-header h1 {
+    font-family: var(--font-titles);
+    color: var(--primary-navy);
+    font-size: 32px;
+}
+
+/* GRID DEL BLOG */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.blog-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.blog-card h3 {
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: var(--secondary-teal);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Asegura que el logo mantenga su estilo Navy Blue original aunque sea un enlace */
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: var(--font-titles);
+    font-size: 24px;
+    color: var(--primary-navy); /* Color Navy Blue #1A2B48 definido en tu Brand Kit */
+    cursor: pointer;
+}
+
+
+/*/////////////////// REVISAR ESTO /////////////////////////////*/
+
+/* Custom Properties - Brand Kit Dermo Máster */
+:root {
+  --primary-navy: #1A2B48;
+  --secondary-teal: #20B2AA;
+  --action-coral: #FF6B6B;
+  --neutral-gray: #F4F7F6;
+  --text-main: #333333;
+  --font-titles: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Arquitectura BEM para componentes */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px; /* */
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button--primary {
+  background-color: var(--action-coral); /* */
+  color: #FFFFFF;
+}
+
+.button--secondary {
+  border: 2px solid var(--primary-navy); /* */
+  color: var(--primary-navy);
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid var(--neutral-gray); /* */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* --- ESTILOS DE LA PÁGINA DE CONTACTO --- */
+
+.contact-card {
+    max-width: 600px; /* Ancho máximo para que no se estire */
+    margin: 0 auto;   /* Centra la tarjeta en la pantalla */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-navy);
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--secondary-teal);
+    outline: none;
+}
+
+.form-checkbox {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
