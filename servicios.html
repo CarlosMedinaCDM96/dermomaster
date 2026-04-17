@@ -3,61 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Másteres y Cursos | Dermo Máster</title>
+    <title>Dermo Máster</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-    <a href="index.html" style="text-decoration: none;">
-        <div class="logo">DERMO MÁSTER</div>
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="masters-hero">
+        <div class="container">
+            <span class="category-tag">CATÁLOGO FORMATIVO</span>
+            <h1>Nuestra Oferta Académica</h1>
+            <p>Programas de postgrado con certificación universitaria ECTS.</p>
+        </div>
+    </section>
+
+    <section class="catalog-section">
+        <div class="container">
+            <div class="masters-card-grid">
+                
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/7.jpg" alt="Máster en Dermatología" class="actual-img">
+                        <span class="ects-badge">60 ECTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Máster en Tricología y Cirugía Capilar</h3>
+                        <p>Especialización avanzada en patologías del cuero cabelludo y técnicas FUE.</p>
+                        <div class="card-info">
+                            <span>💻 60 ECTS | 100% Online</span>
+                        </div>
+                        <button class="btn-card disabled">Próximamente 🕒</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/5.jpg" alt="Máster en Dermatología" class="actual-img">
+                        <span class="ects-badge">60 ECTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Máster en Dermatología Estética</h3>
+                        <p>Formación integral en procedimientos dermoestéticos y láser médico.</p>
+                        <div class="card-info">
+                            <span>💻 60 ECTS | 100% Online</span>
+                        </div>
+                        <button class="btn-card disabled">Próximamente 🕒</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/4.jpg" alt="Experto en Casos Clínicos" class="actual-img">
+                        <span class="ects-badge">20 ECTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Experto en Casos Clínicos Complejos</h3>
+                        <p>Resolución práctica de diagnósticos diferenciales en dermatología clínica.</p>
+                        <div class="card-info">
+                            <span>💻 20 ECTS | 6 meses</span>
+                        </div>
+                        <button class="btn-card disabled">Próximamente 🕒</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-orientacion">
+  <div class="cta-content">
+    <h2 class="cta-title">¿Necesitas orientación académica?</h2>
+    <p class="cta-text">
+      Nuestro equipo te asesora sobre el programa más adecuado a tu perfil profesional.
+    </p>
+    <a href="contacto.html" class="cta-button">
+      Solicitar Información <span class="cta-arrow">&rarr;</span>
     </a>
-    
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Másteres</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+  </div>
+</section>
 
-    <section class="catalog-header">
-        <h1>Nuestra Oferta Académica</h1>
-        <p>Programas de postgrado con certificación universitaria ECTS.</p>
-    </section>
+    <footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
 
-    <section class="benefits">
-        <article class="card">
-            <div class="placeholder-img" style="height: 150px; width: 100%;">Imagen Tricología</div>
-            <h3>Máster en Tricología y Cirugía Capilar</h3>
-            <p>Especialización avanzada en patologías del cuero cabelludo y técnicas FUE.</p>
-            <p><strong>60 ECTS | 100% Online</strong></p>
-            <a href="master-tricologia.html" class="btn btn-primary" style="margin-top: 15px; display: block;">Ver Detalles</a>
-        </article>
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
 
-        <article class="card">
-            <div class="placeholder-img" style="height: 150px; width: 100%; background-color: #1A2B48;">Imagen Estética</div>
-            <h3>Máster en Dermatología Estética</h3>
-            <p>Formación integral en procedimientos dermoestéticos y láser médico.</p>
-            <p><strong>60 ECTS | 100% Online</strong></p>
-            <a href="#" class="btn btn-primary" style="margin-top: 15px; display: block;">Ver Detalles</a>
-        </article>
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
 
-        <article class="card">
-            <div class="placeholder-img" style="height: 150px; width: 100%; background-color: #333;">Imagen Casos Clínicos</div>
-            <h3>Experto en Casos Clínicos Complejos</h3>
-            <p>Resolución práctica de diagnósticos diferenciales en dermatología clínica.</p>
-            <p><strong>20 ECTS | 6 meses</strong></p>
-            <a href="#" class="btn btn-primary" style="margin-top: 15px; display: block;">Ver Detalles</a>
-        </article>
-    </section>
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Dermo Máster. Proyecto de prácticas.</p>
-    </footer>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
+                </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

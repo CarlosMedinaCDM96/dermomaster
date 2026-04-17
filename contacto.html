@@ -3,75 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Dermo Máster</title>
+    <title>Dermo Máster</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-    <a href="index.html" style="text-decoration: none;">
-        <div class="logo">DERMO MÁSTER</div>
-    </a>
-    
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Másteres</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="navbar">
 
-    <section class="catalog-header">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="masters-hero">
         <div class="container">
+            <span class="category-tag">CONTACTO</span>
             <h1>Hablemos de tu futuro</h1>
-            <p>¿Tienes dudas sobre los créditos ECTS o el temario? Nuestro equipo médico te asesora.</p>
+            <p style="margin-bottom: 10px;">¿Tienes dudas sobre los créditos ECTS o el temario? Nuestro equipo</p>
+            <p>médico te asesora.</p>
         </div>
     </section>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="contact-card">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre y Apellidos</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Dr/Dra. Nombre Apellido" required>
-                    </div>
+    <section class="contact-section">
+      <div id="form-container" class="form-card">
+        <div class="form-header">
+          <h2>Envíanos tu consulta</h2>
+          <p>Todos los campos marcados son obligatorios.</p>
+        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email profesional</label>
-                        <input type="email" id="email" name="email" placeholder="ejemplo@medico.es" required>
-                    </div>
+        <form id="contact-form" class="contact-form">
+          <div class="input-group">
+            <label for="nombre">Nombre y Apellidos *</label>
+            <input type="text" id="nombre" placeholder="Dr/Dra. Nombre y Apellido" required>
+          </div>
 
-                    <div class="form-group">
-                        <label for="mensaje">Consulta médica o académica</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
-                    </div>
+          <div class="input-group">
+            <label for="email">Email profesional *</label>
+            <input type="email" id="email" placeholder="ejemplo@medico.com" required>
+          </div>
 
-                    <div class="form-checkbox">
-                        <input type="checkbox" id="legal" required>
-                        <label for="legal">Acepto la <a href="legal/privacidad.html">política de privacidad</a></label>
-                    </div>
+          <div class="input-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+          </div>
 
-                    <button type="submit" class="button button--primary" style="width: 100%;">Enviar solicitud</button>
-                </form>
+          <div class="privacy-policy">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">Acepto la <a href="#">política de privacidad</a></label>
+          </div>
 
-                <div id="successMessage" style="display:none; text-align: center; padding: 20px;">
-                    <h3 style="color: var(--secondary-teal);">¡Mensaje enviado!</h3>
-                    <p>En breve un asesor académico se pondrá en contacto contigo.</p>
+          <button type="submit" class="btn-submit">
+            Enviar solicitud <span>&rarr;</span>
+          </button>
+        </form>
+      </div>
+
+      <div id="success-card" class="form-card success-card" style="display: none;">
+        <div class="success-icon">
+          <span class="check-mark">L</span>
+        </div>
+        <h2 class="success-title">¡Mensaje enviado!</h2>
+        <p class="success-text">En breve un asesor académico se pondrá en contacto contigo.</p>
+        <a href="javascript:location.reload()" class="back-link">
+          <span>&larr;</span> Volver al inicio
+        </a>
+      </div>
+    </section>
+
+
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
                 </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
             </div>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Dermo Máster. Proyecto de prácticas.</p>
-        </div>
-    </footer>
+<script>
+      // Buscamos los elementos en el HTML usando los ID que acabamos de poner
+      const formContainer = document.getElementById('form-container');
+      const successCard = document.getElementById('success-card');
+      const contactForm = document.getElementById('contact-form');
 
-    <script src="src/js/main.js"></script>
+      // Si el formulario existe en la página, aplicamos la magia
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+          // 1. Evita que la página intente cargar una URL nueva al darle a enviar
+          event.preventDefault(); 
+          
+          // 2. Oculta la tarjeta del formulario
+          formContainer.style.display = 'none'; 
+          
+          // 3. Muestra la tarjeta de éxito
+          successCard.style.display = 'block';  
+        });
+      }
+    </script>
+
+
 </body>
 </html>

@@ -3,64 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dermo Máster | Formación Especializada para Médicos</title>
+    <title>Dermo Máster</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-    <a href="index.html" style="text-decoration: none;">
-        <div class="logo">DERMO MÁSTER</div>
-    </a>
-    
-    <nav class="nav-menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Másteres</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+    <header class="navbar">
 
-</header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-container">
+            
+            <div class="hero-text">
+                <span class="badge">FORMACIÓN MÉDICA ESPECIALIZADA</span>
                 <h1>La élite de la formación dermatológica a un clic de tu consulta</h1>
                 <p>Especialízate con programas diseñados por y para médicos. Obtén tu titulación con créditos ECTS y metodología 100% online.</p>
-                <a href="servicios.html" class="btn btn-primary">Explorar Másteres</a>
-            </div>
-            <div class="hero-image">
-                <div class="placeholder-img">Imagen Médico / Vídeo</div>
-            </div>
-        </section>
+                <a href="servicios.html" class="btn-primary">Explorar Másteres &rarr;</a>
 
-        <section class="benefits">
-            <div class="card">
-                <h3>Baremable</h3>
-                <p>Títulos válidos para traslados y oposiciones en el Sistema Nacional de Salud.</p>
+                <div class="trust-indicators">
+                    <div class="indicator">
+                        <span class="icon-star">★</span> 4.9/5 valoración
+                    </div>
+                    <div class="indicator">
+                        <span class="icon-user">👥</span> +2.400 alumnos
+                    </div>
+                    <div class="indicator">
+                        <span class="icon-check">✓</span> Créditos ECTS
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Mentoría Directa</h3>
-                <p>Foro activo con especialistas de primer nivel para casos clínicos reales.</p>
+
+            <div class="hero-image-wrapper">
+                <img src="img/10.jpeg" alt="Medicación dermatológica" class="main-image">
+                <div class="glass-card">
+                    <span class="card-subtitle">Próximo inicio</span>
+                    <h3 class="card-title">Máster en Dermatología Clínica</h3>
+                    <p class="card-details">60 créditos ECTS · 12 meses</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Multi-dispositivo</h3>
-                <p>Estudia desde la tablet en el hospital o desde el PC en casa, 24/7.</p>
-            </div>
-        </section>
+
+        </div>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Dermo Máster. Proyecto de prácticas.</p>
-        <div class="legal-links">
-        <a href="legal/aviso-legal.html">Aviso Legal</a> | 
-        <a href="legal/privacidad.html">Privacidad</a> | 
-        <a href="legal/cookies.html">Cookies</a>
+    <section class="features">
+        <div class="features-container">
+            
+            <div class="features-header">
+                <span class="pre-title">¿POR QUÉ ELEGIRNOS?</span>
+                <h2>Formación que marca la diferencia</h2>
+                <p>Cada detalle de nuestros programas está pensado para que avances en tu carrera sin pausar tu vida profesional.</p>
+            </div>
+
+            <div class="features-grid">
+                
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Baremable</h3>
+                    <p>Títulos válidos para traslados y oposiciones en el Sistema Nacional de Salud.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3>Mentoría Directa</h3>
+                    <p>Foro activo con especialistas de primer nivel para casos clínicos reales.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-purple">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3>Multi-dispositivo</h3>
+                    <p>Estudia desde la tablet en el hospital o desde el PC en casa, 24/7.</p>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tu centro para especializarte en Dermatología <br><div class="underline-short"></div></h2>
+                    
+                    <p>Dermo Máster se erige como el lugar de confianza por excelencia para adquirir, ampliar y actualizar tus conocimientos en Medicina Estética, Dermatología Antienvejecimiento y Nutrición aplicada.</p>
+                    
+                    <p>Nuestro programa está orientado a que el alumno conozca los procedimientos para corregir los inestetismos mediante intervenciones poco agresivas y ambulatorias, alcanzando la armonía facial o corporal, satisfaciendo la demanda de nuestros pacientes y reduciendo los signos del envejecimiento mientras se da a la piel un aspecto saludable.</p>
+                    
+                    <p>En los módulos dedicados al antienvejecimiento exponemos las causas del mismo, así como una serie de intervenciones y prácticas destinadas a retrasar o reducir los signos visibles del envejecimiento y mejorar la calidad de vida a medida que las personas envejecen, promocionando hábitos saludables que optimicen todos los tratamientos destinados a la medicina anti-aging.</p>
+                    
+                    <p>Dedicamos un apartado completo a la asesoría nutricional para responder a las necesidades alimentarias en determinadas épocas de la vida, fomentando una alimentación equilibrada que favorezca los hábitos saludables y potencie los resultados de la medicina antienvejecimiento.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="img/2.jpg" alt="Médico especialista">
+                    <div class="image-badge">
+                        Programas diseñados por y para médicos especialistas
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-quote">
+                <p>Nuestra dedicación inquebrantable a la excelencia académica y práctica se refleja en cada uno de los programas que ofrecemos. Estamos comprometidos en proporcionar un ambiente educativo enriquecedor que fomente el aprendizaje continuo, adquiriendo las competencias y habilidades necesarias para el desarrollo profesional.</p>
+            </div>
+
+            <p class="thanks-message">¡Gracias por elegir Dermo Máster como tu destino para el crecimiento y la excelencia en el ámbito de la Dermatología Estética!</p>
+
+        </div>
+    </section>
+
+    <section class="masters-section">
+        <div class="container">
+            
+            <div class="masters-intro">
+                <div class="masters-intro-image">
+                    <img src="img/5.jpg" alt="Doctor Especialista">
+                </div>
+                <div class="masters-intro-text">
+                    <h2>Másteres en Medicina Estética</h2>
+                    <div class="underline-short"></div>
+                    <p>Descubre en Dermo Máster una formación completa en Medicina Estética, Antienvejecimiento y Nutrición. Nuestros programas están meticulosamente diseñados para proporcionarte tanto los conocimientos esenciales como los avanzados necesarios para destacar en este dinámico campo.</p>
+                    <p>Nuestro claustro de profesores lo integran profesionales clínicos de gran excelencia, jefes de servicio de prestigiosos hospitales, profesores universitarios con larga trayectoria académica y experiencia en la formación e investigación de esta área, así como clínicas de medicina estética donde profesionales de reconocido prestigio tutorizan a los alumnos en su práctica individualizada y presencial.</p>
+                </div>
+            </div>
+
+            <div class="masters-grid">
+                
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-green">Semipresencial</span>
+                        <span class="tag tag-blue">90 ECTS</span>
+                    </div>
+                    <h3>Máster Internacional en Medicina Estética, Antienvejecimiento y Nutrición</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 2.250 horas lectivas</li>
+                        <li><span class="check">✓</span> Prácticas presenciales</li>
+                        <li><span class="check">✓</span> Licenciados o Graduados en Medicina</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-purple">Online</span>
+                        <span class="tag tag-blue">60 ECTS</span>
+                    </div>
+                    <h3>Máster Internacional en Medicina Estética</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 1.500 horas lectivas</li>
+                        <li><span class="check">✓</span> Modalidad 100% online</li>
+                        <li><span class="check">✓</span> Licenciados o Graduados en Medicina</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="masters-section white-bg">
+        <div class="container">
+            
+            <div class="masters-intro reverse">
+                <div class="masters-intro-text">
+                    <h2>Máster en Tricología e <br>Implantes Capilares</h2>
+                    <div class="underline-short"></div>
+                    <p>Sumérgete en la especialización con nuestro exclusivo Máster en Tricología y Cirugía de Trasplante Capilar. Este programa singular te brinda la oportunidad de sumergirte en las últimas tendencias en tricología y adquirir habilidades prácticas en implantes capilares, marcando así tu sendero hacia la excelencia en la restauración capilar.</p>
+                    <p>Nuestro claustro de profesores lo integran profesionales clínicos de gran excelencia, profesores universitarios con larga trayectoria académica y experiencia en la formación e investigación de esta área, así como hospitales y clínicas de tricología y cirugía capilar donde profesionales de reconocido prestigio tutorizan a los alumnos en su práctica individualizada y presencial.</p>
+                </div>
+                <div class="masters-intro-image">
+                    <img src="img/6.jpg" alt="Instalaciones Tricología">
+                </div>
+            </div>
+
+            <div class="masters-grid">
+                
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-green">Semipresencial</span>
+                        <span class="tag tag-blue">90 ECTS</span>
+                    </div>
+                    <h3>Máster Internacional en Tricología y Cirugía de Trasplante Capilar</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 2.250 horas lectivas</li>
+                        <li><span class="check">✓</span> Prácticas presenciales</li>
+                        <li><span class="check">✓</span> Licenciados o Graduados en Medicina</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-purple">Online</span>
+                        <span class="tag tag-blue">60 ECTS</span>
+                    </div>
+                    <h3>Máster Internacional en Tricología y Cirugía de Trasplante Capilar</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 1.500 horas lectivas</li>
+                        <li><span class="check">✓</span> Modalidad 100% online</li>
+                        <li><span class="check">✓</span> Licenciados o Graduados en Medicina</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="masters-section">
+        <div class="container">
+            
+            <div class="masters-intro">
+                <div class="masters-intro-image">
+                    <img src="img/9.jpg" alt="Personal de Enfermería">
+                </div>
+                <div class="masters-intro-text">
+                    <h2>Títulos de Enfermería en Tricología</h2>
+                    <div class="underline-short"></div>
+                    <p>Para profesionales de enfermería que pretenden destacar en el ámbito de la Cirugía Capilar, ponemos a tu disposición diplomas especializados en Tricología, donde podrás realizar las prácticas en nuestros hospitales y clínicas de tricología y cirugía capilar donde profesionales de reconocido prestigio tutorizan a los alumnos en su práctica presencial.</p>
+                    <p>Amplía tus conocimientos y contribuye de manera significativa al bienestar capilar de tus pacientes. En Dermo Máster, entendemos la importancia de la formación continua y específica para profesionales de la enfermería que desean destacar en el ámbito de la medicina capilar.</p>
+                </div>
+            </div>
+
+            <div class="masters-grid">
+                
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-green">Semipresencial</span>
+                        <span class="tag tag-blue">60 ECTS</span>
+                    </div>
+                    <h3>Máster Internacional de Cirugía de Trasplante Capilar y Tricología en Enfermería</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 1.500 horas lectivas</li>
+                        <li><span class="check">✓</span> Prácticas presenciales</li>
+                        <li><span class="check">✓</span> Diplomados (DUE) o Graduados en Enfermería</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-purple">Online</span>
+                        <span class="tag tag-blue">29 ECTS</span>
+                    </div>
+                    <h3>Experto Universitario de Enfermería en Cirugía de Injerto Capilar</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 725 horas lectivas</li>
+                        <li><span class="check">✓</span> Modalidad 100% online</li>
+                        <li><span class="check">✓</span> Diplomados (DUE) o Graduados en Enfermería</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="masters-section white-bg">
+        <div class="container">
+            
+            <div class="masters-intro reverse">
+                <div class="masters-intro-text">
+                    <h2>Títulos de Técnico Auxiliar de <br>Enfermería en Tricología</h2>
+                    <div class="underline-short"></div>
+                    <p>Inicia tu camino en el mundo de la Cirugía Capilar con nuestros diplomas especialmente diseñados para Técnicos Auxiliares de Enfermería en Tricología en nuestros hospitales y clínicas de tricología y cirugía capilar donde profesionales de reconocido prestigio tutorizan a los alumnos en su práctica presencial.</p>
+                    <p>Adquiere habilidades tanto prácticas como teóricas que te prepararán de manera integral para triunfar desde los primeros pasos de tu carrera. En Dermo Máster, nos comprometemos a brindarte una formación completa y especializada que siente las bases para tu éxito en el campo de la estética capilar.</p>
+                </div>
+                <div class="masters-intro-image">
+                    <img src="img/operacion_hyposfix.png" alt="Prácticas de Auxiliar en Cirugía">
+                </div>
+            </div>
+
+            <div class="masters-grid">
+                
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-green">Semipresencial</span>
+                        <span class="tag tag-blue">36 ECTS</span>
+                    </div>
+                    <h3>Curso Superior Universitario de Técnicas Avanzadas en Implantes Capilares</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 900 horas lectivas</li>
+                        <li><span class="check">✓</span> Prácticas presenciales</li>
+                        <li><span class="check">✓</span> Técnicos superiores en área de Salud</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+                <div class="master-card">
+                    <div class="card-tags">
+                        <span class="tag tag-purple">Online</span>
+                        <span class="tag tag-blue">30 ECTS</span>
+                    </div>
+                    <h3>Curso Superior Universitario de Técnicas Avanzadas en Implantes Capilares</h3>
+                    <ul class="master-features">
+                        <li><span class="check">✓</span> 750 horas lectivas</li>
+                        <li><span class="check">✓</span> Modalidad 100% online</li>
+                        <li><span class="check">✓</span> Técnicos superiores en área de Salud</li>
+                    </ul>
+                    <a href="#" class="more-info">Más Información &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us-section">
+        <div class="container">
+            
+            <div class="why-header">
+                <h2>¿Por qué elegir Dermo Máster?</h2>
+                <p>En Dermo Máster, nos especializamos en formación dermatológica de élite. Esta dedicación específica nos distingue como líderes en la impartición de formación de alta calidad en este campo. Nuestra dedicación va más allá de la teoría, ya que nos esforzamos por proporcionarte experiencias prácticas y conocimientos fundamentales.</p>
+            </div>
+
+            <div class="why-grid">
+                
+    <div class="why-card border-green">
+        <div class="why-icon bg-green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+        </div>
+        <h3>Confianza</h3>
+        <p>El 73% de nuestros estudiantes vienen recomendados por nuestros exalumnos.</p>
+    </div>
+
+    <div class="why-card border-blue">
+        <div class="why-icon bg-blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+        </div>
+        <h3>Garantía</h3>
+        <p>Títulos acreditados (ECTS) y emitidos por una Universidad del Espacio Europeo de Educación Superior EEES.</p>
+    </div>
+
+    <div class="why-card border-purple">
+        <div class="why-icon bg-purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="4" y="4" width="16" height="4" rx="2" ry="2"></rect>
+                <path d="M10 12h4"></path>
+            </svg>
+        </div>
+        <h3>Metodología</h3>
+        <p>Promovemos el aprendizaje compartido basado en la evidencia científica y el trabajo en equipo.</p>
+    </div>
+
+    <div class="why-card border-green">
+        <div class="why-icon bg-green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+        </div>
+        <h3>Calidad</h3>
+        <p>Los contenidos son elaborados e impartidos por expertos profesionales de reconocido prestigio en su área.</p>
+    </div>
+
+    <div class="why-card border-blue">
+        <div class="why-icon bg-blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+        </div>
+        <h3>Equipo docente</h3>
+        <p>El claustro está formado por profesores universitarios con amplias carreras docentes e investigadoras.</p>
+    </div>
+
+    <div class="why-card border-purple">
+        <div class="why-icon bg-purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+        </div>
+        <h3>Flexibilidad</h3>
+        <p>Nuestros estudiantes deciden en todo momento según su disponibilidad horaria y económica el ritmo de avance en sus contenidos docentes.</p>
+    </div>
+
+    <div class="why-card border-green">
+        <div class="why-icon bg-green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+        </div>
+        <h3>Ecosostenible</h3>
+        <p>No usamos papel para impartir nuestra docencia siendo neutros en carbono y usando metodologías de innovación docentes 100% digitales.</p>
+    </div>
+
+    <div class="why-card border-blue">
+        <div class="why-icon bg-blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                <path d="M9 14l2 2 4-4"></path>
+            </svg>
+        </div>
+        <h3>Plazas limitadas</h3>
+        <p>Prácticas individuales que aseguran la excelente formación de nuestros alumnos.</p>
+    </div>
+
+    <div class="why-card border-purple">
+        <div class="why-icon bg-purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+        </div>
+        <h3>Empleabilidad</h3>
+        <p>El 89% de nuestros exalumnos ejercen laboralmente la profesión para la que se formaron.</p>
+    </div>
+
 </div>
-    </footer>
+</section>
+
+<!-- SECCION FINAL -->
+
+<section class="excellence-section">
+        <div class="excellence-container">
+            
+            <div class="excellence-text-column">
+                <div class="excellence-header">
+                    <h2>Formación dermatológica de excelencia</h2>
+                    <div class="excellence-underline"></div>
+                </div>
+                
+                <p>Nuestros programas cuentan con el respaldo académico de instituciones universitarias de prestigio. Esta asociación garantiza que tu educación sea reconocida y respetada en el ámbito sanitario.</p>
+                
+                <p>Al elegir Dermo Máster estás eligiendo la garantía de calidad académica respaldada por universidades de referencia en el Espacio Europeo de Educación Superior.</p>
+                
+                <p class="excellence-highlight">Te invitamos a unirte a nuestra comunidad educativa y a explorar las infinitas posibilidades en la Medicina Estética, Tricología y Cirugía Capilar. Prepárate para dar el siguiente paso en tu carrera y descubrir un mundo de oportunidades que te esperan.</p>
+            </div>
+
+            <div class="excellence-image-column">
+                <div class="excellence-img-wrapper">
+                    <div class="excellence-placeholder">
+                        <img src="img/1.jpg" alt="Icono representativo" class="img-icon">
+                    </div>
+                    
+                    <div class="excellence-dark-box">
+                        Titulaciones universitarias con créditos ECTS reconocidos en el EEES
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+
+
+<!-- FOOTER -->
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
+                </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

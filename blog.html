@@ -3,55 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Médico | Dermo Máster</title>
+    <title>Dermo Máster</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-   <header class="header">
-    <a href="index.html" style="text-decoration: none;">
-        <div class="logo">DERMO MÁSTER</div>
-    </a>
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="masters-hero">
+        <div class="container">
+            <span class="category-tag">BLOG</span>
+            <h1>Actualidad y Recursos Médicos</h1>
+            <p>Artículos técnicos y guías para el profesional de la dermatología</p>
+        </div>
+    </section>
+
+    <section class="news-section">
+  <div class="cards-container">
     
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Másteres</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <article class="card">
+      <div class="card-badge">CLÍNICA</div>
+      <h3 class="card-title">Protocolo ante la dermatitis atópica severa</h3>
+      <p class="card-description">Revisión de las nuevas guías clínicas 2024 para el manejo del paciente crónico...</p>
+      <div class="card-footer gray">
+        Próximamente <span class="icon-clock">🕒</span>
+      </div>
+      <!--<a href="#" class="card-link">Leer artículo completo <span>&rarr;</span></a>-->
+    </article>
 
-    <section class="catalog-header">
-        <h1>Actualidad y Recursos Médicos</h1>
-        <p>Artículos técnicos y guías para el profesional de la dermatología.</p>
-    </section>
+    <article class="card">
+      <div class="card-badge">GESTIÓN</div>
+      <h3 class="card-title">Rentabilidad de la unidad de tricología</h3>
+      <p class="card-description">Análisis de costes y beneficios para la implementación de cirugía capilar en clínica privada...</p>
+      <div class="card-footer gray">
+        Próximamente <span class="icon-clock">🕒</span>
+      </div>
+    </article>
 
-    <section class="blog-grid">
-        <article class="blog-card">
-            <h3>Protocolo ante la dermatitis atópica severa</h3>
-            <p>Revisión de las nuevas guías clínicas 2024 para el manejo del paciente crónico...</p>
-            <a href="post-1.html" class="read-more">Leer artículo completo →</a>
-        </article>
+    <article class="card">
+      <div class="card-badge">FORMACIÓN</div>
+      <h3 class="card-title">¿Por qué elegir créditos ECTS?</h3>
+      <p class="card-description">Descubre las diferencias legales y académicas entre los títulos propios y los oficiales...</p>
+      <div class="card-footer gray">
+        Próximamente <span class="icon-clock">🕒</span>
+      </div>
+    </article>
 
-        <article class="blog-card">
-            <h3>Rentabilidad de la unidad de tricología</h3>
-            <p>Análisis de costes y beneficios para la implementación de cirugía capilar en clínica privada...</p>
-            <a href="#" class="read-more">Leer artículo completo →</a>
-        </article>
+  </div>
+</section>
 
-        <article class="blog-card">
-            <h3>¿Por qué elegir créditos ECTS?</h3>
-            <p>Descubre las diferencias legales y académicas entre los títulos propios y los oficiales...</p>
-            <a href="#" class="read-more">Leer artículo completo →</a>
-        </article>
-    </section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Dermo Máster. Proyecto de prácticas.</p>
-    </footer>
+<section class="cta-orientacion">
+  <div class="cta-content">
+    <h2 class="cta-title">¿Quieres estar al día?</h2>
+    <p class="cta-text">
+      Suscríbete a nuestra newsletter y recibe cada mes casos clínicos, recursos y novedades formativas.
+    </p>
+    <a href="#" class="cta-button">Contactar<span class="cta-arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
+                </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
