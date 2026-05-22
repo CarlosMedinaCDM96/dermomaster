@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experto en Enfermería en Cirugía de Injerto Capilar - Dermo Máster</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Estilos sincronizados con master-tricologia.html */
+        .master-detail-hero {
+            background-color: var(--dark-blue, #143c5a);
+            color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .master-detail-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            max-width: 900px;
+            margin: 15px auto;
+            line-height: 1.3;
+        }
+        .badges-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .badge-info {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .master-layout {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .section-block { margin-bottom: 50px; }
+        .section-block h2 {
+            color: var(--dark-blue, #143c5a);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-teal, #009982);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .section-block p, .section-block li { color: #475569; line-height: 1.7; font-size: 1rem; margin-bottom: 15px; }
+        
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-teal, #009982);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .syllabus-list { list-style: none; padding: 0; }
+        .syllabus-list li {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--dark-blue, #143c5a);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .syllabus-list li span {
+            background: #e6f6f4;
+            color: var(--primary-teal, #009982);
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .faq-item { margin-bottom: 20px; }
+        .faq-item h4 { color: var(--dark-blue, #143c5a); font-size: 1.1rem; margin-bottom: 10px; }
+        .faq-item p { font-size: 0.95rem; background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; }
+
+        .sidebar-pricing {
+            position: sticky;
+            top: 20px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .sidebar-pricing h3 { color: var(--dark-blue, #143c5a); font-size: 1.4rem; margin-bottom: 20px; text-align: center; }
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 10px;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+        .price-row strong { color: var(--dark-blue, #143c5a); }
+        .price-row.total { font-size: 1.1rem; border-bottom: none; margin-top: 15px; }
+        .price-row.total strong { color: var(--primary-teal, #009982); font-size: 1.4rem; }
+        
+        .sidebar-btn {
+            display: block;
+            background: var(--primary-teal, #009982);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .sidebar-btn:hover { background: #007a68; }
+
+        @media (max-width: 968px) {
+            .master-layout { grid-template-columns: 1fr; }
+            .sidebar-pricing { position: static; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link" style="text-decoration: none; color: inherit;">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="master-detail-hero">
+        <div class="container">
+            <span style="background: rgba(0, 153, 130, 0.2); color: #4fd1c5; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem;">DIPLOMA DE EXPERTO UNIVERSITARIO</span>
+            <h1>Experto Universitario de Enfermería en Cirugía de Injerto Capilar</h1>
+            <div class="badges-wrap">
+                <div class="badge-info"><i class="fa-solid fa-user-nurse"></i> Enfermería (DUE/Grado)</div>
+                <div class="badge-info"><i class="fa-solid fa-award"></i> 29 ECTS (UCAM)</div>
+                <div class="badge-info"><i class="fa-solid fa-clock"></i> 725 horas</div>
+                <div class="badge-info"><i class="fa-solid fa-laptop"></i> Modalidad Online</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="master-layout">
+        
+        <div class="content-left">
+            
+            <div class="section-block">
+                <h2>Descripción del Programa</h2>
+                <div class="highlight-box">
+                    <p>Título de posgrado diseñado para profesionales de enfermería que buscan especializarse en el ámbito de la cirugía capilar. Formación teórica flexible compuesta por 10 módulos mediante videoclases en remoto.</p>
+                    <p><strong>Director:</strong> Dr. Rafael Linares García-Valdecasas.</p>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2>Programa Académico</h2>
+                <ul class="syllabus-list">
+                    <li><span>3 ECTS</span> Asignatura 1 – Anatomía y Fisiopatología del Cuero Cabelludo y Folículo Pilosebáceo</li>
+                    <li><span>3 ECTS</span> Asignatura 2 – Patología Capilar y del Cuero Cabelludo</li>
+                    <li><span>3 ECTS</span> Asignatura 3 – Historia Clínica. Exploración y Diagnóstico</li>
+                    <li><span>3 ECTS</span> Asignatura 4 – Tratamiento de las Afecciones del Cuero Cabelludo</li>
+                    <li><span>3 ECTS</span> Asignatura 5 – Material Quirúrgico. Bioseguridad</li>
+                    <li><span>3 ECTS</span> Asignatura 6 – Comunicación y Gestión de la Relación con el Paciente</li>
+                    <li><span>3 ECTS</span> Asignatura 7 – Diseño. Visagismo y Micropigmentación Capilar</li>
+                    <li><span>3 ECTS</span> Asignatura 8 – Gestión y Marketing en la Clínica de Cirugía Capilar</li>
+                    <li><span>3 ECTS</span> Asignatura 9 – Trasplante Capilar con Técnica FUE</li>
+                    <li><span>2 ECTS</span> Asignatura 10 – Técnicas de Instrumentación en el Quirófano</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-item">
+                    <h4>¿Cuándo puedo inscribirme?</h4>
+                    <p>Puedes matricularte en 3 convocatorias al año (Septiembre, Enero o Mayo). El proceso de reserva está abierto los 365 días del año.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Cómo funciona la modalidad online?</h4>
+                    <p>El programa te permite elegir tu propio ritmo. Puedes matricularte por módulos, realizando al menos uno al mes, lo que aporta una gran flexibilidad horaria y económica.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué titulación se obtiene?</h4>
+                    <p>Título de Experto Universitario avalado por la Universidad Católica San Antonio de Murcia (UCAM), perteneciente al Espacio Europeo de Educación Superior (EEES).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="sidebar-pricing">
+                <h3>Reserva y Matrícula</h3>
+                
+                <div class="price-row">
+                    <span>Reserva (Mayo 2026):</span>
+                    <strong>220€</strong>
+                </div>
+                <div class="price-row">
+                    <span>Reserva (Junio 2026):</span>
+                    <strong>320€</strong>
+                </div>
+                
+                <p style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 20px; margin-top: -5px;">*Importe no incluido en la matrícula.</p>
+
+                <div class="price-row total">
+                    <span>Pago Único:</span>
+                    <strong>1.200€</strong>
+                </div>
+                
+                <div style="text-align: center; margin: 10px 0; color: #94a3b8; font-size: 0.9rem;">— o financiado —</div>
+
+                <div class="price-row total" style="margin-top: 0;">
+                    <span>Pago Fraccionado:</span>
+                    <strong>130€ <span style="font-size: 0.9rem; font-weight: normal; color: #475569;">x 10 cuotas</span></strong>
+                </div>
+
+                <a href="contacto.html" class="sidebar-btn">Solicitar información</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
+                </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

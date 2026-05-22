@@ -38,38 +38,76 @@
     </section>
 
     <section class="news-section">
-  <div class="cards-container">
-    
-    <article class="card">
-      <div class="card-badge">CLÍNICA</div>
-      <h3 class="card-title">Protocolo ante la dermatitis atópica severa</h3>
-      <p class="card-description">Revisión de las nuevas guías clínicas 2024 para el manejo del paciente crónico...</p>
-      <div class="card-footer gray">
-        Próximamente <span class="icon-clock">🕒</span>
-      </div>
-      <!--<a href="#" class="card-link">Leer artículo completo <span>&rarr;</span></a>-->
-    </article>
+    <div class="cards-container">
+        
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">CLÍNICA</div>
+            <h3>Protocolo ante la dermatitis atópica severa</h3>
+            <p class="card-description">Revisión de las nuevas guías clínicas 2024 para el manejo del paciente crónico.</p>
+            <div class="full-content">
+                <p>Las guías de 2024 enfatizan el uso de nuevas terapias biológicas. El protocolo actual se centra en la estabilización de la barrera cutánea antes de iniciar tratamientos sistémicos.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
 
-    <article class="card">
-      <div class="card-badge">GESTIÓN</div>
-      <h3 class="card-title">Rentabilidad de la unidad de tricología</h3>
-      <p class="card-description">Análisis de costes y beneficios para la implementación de cirugía capilar en clínica privada...</p>
-      <div class="card-footer gray">
-        Próximamente <span class="icon-clock">🕒</span>
-      </div>
-    </article>
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">GESTIÓN</div>
+            <h3>Rentabilidad de la unidad de tricología</h3>
+            <p class="card-description">Análisis de costes y beneficios para la implementación de cirugía capilar.</p>
+            <div class="full-content">
+                <p>Implementar una unidad de tricología requiere inversión, pero el retorno de inversión es altamente favorable debido a la alta demanda actual de procedimientos de injerto capilar.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
 
-    <article class="card">
-      <div class="card-badge">FORMACIÓN</div>
-      <h3 class="card-title">¿Por qué elegir créditos ECTS?</h3>
-      <p class="card-description">Descubre las diferencias legales y académicas entre los títulos propios y los oficiales...</p>
-      <div class="card-footer gray">
-        Próximamente <span class="icon-clock">🕒</span>
-      </div>
-    </article>
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">FORMACIÓN</div>
+            <h3>¿Por qué elegir créditos ECTS?</h3>
+            <p class="card-description">Diferencias legales y académicas entre los títulos propios y los oficiales.</p>
+            <div class="full-content">
+                <p>Elegir formación con reconocimiento ECTS es fundamental para que tus estudios tengan validez en oposiciones, baremación de méritos y continuidad académica internacional.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
 
-  </div>
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">CLÍNICA</div>
+            <h3>El auge del Plasma Rico en Plaquetas (PRP)</h3>
+            <p class="card-description">Cómo la medicina regenerativa está optimizando los resultados post-trasplante.</p>
+            <div class="full-content">
+                <p>El PRP se ha consolidado como un coadyuvante esencial en los injertos capilares, aumentando drásticamente la supervivencia del folículo implantado.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
+
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">ESPECIALIZACIÓN</div>
+            <h3>Abordaje de la alopecia femenina</h3>
+            <p class="card-description">Diferencias diagnósticas y expectativas del paciente frente al trasplante.</p>
+            <div class="full-content">
+                <p>La alopecia en mujeres presenta desafíos únicos. Un diagnóstico diferencial preciso es crucial para lograr una alta densidad y satisfacción del paciente.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
+
+        <article class="card" onclick="toggleCard(this)">
+            <div class="card-badge">ÉTICA</div>
+            <h3>Consentimiento informado: clave legal</h3>
+            <p class="card-description">La importancia de la comunicación médico-paciente antes de la intervención.</p>
+            <div class="full-content">
+                <p>Más allá de un requisito legal, el consentimiento informado es una herramienta de comunicación esencial para gestionar las expectativas del paciente.</p>
+            </div>
+            <div class="card-footer"><span>Haz clic para ver más</span></div>
+        </article>
+
+    </div>
 </section>
+
+<script>
+    function toggleCard(element) {
+        element.classList.toggle('expanded');
+    }
+</script>
 
 
 <section class="cta-orientacion">
@@ -78,7 +116,7 @@
     <p class="cta-text">
       Suscríbete a nuestra newsletter y recibe cada mes casos clínicos, recursos y novedades formativas.
     </p>
-    <a href="#" class="cta-button">Contactar<span class="cta-arrow">&rarr;</span>
+    <a href="contacto.html" class="cta-button">Contactar<span class="cta-arrow">&rarr;</span>
     </a>
   </div>
 </section>

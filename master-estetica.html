@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máster en Medicina Estética Online - Dermo Máster</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        .master-detail-hero {
+            background-color: var(--dark-blue, #143c5a);
+            color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .master-detail-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            max-width: 900px;
+            margin: 15px auto;
+            line-height: 1.3;
+        }
+        .badges-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .badge-info {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .master-layout {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .section-block {
+            margin-bottom: 50px;
+        }
+        .section-block h2 {
+            color: var(--dark-blue, #143c5a);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-teal, #009982);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .section-block p, .section-block li {
+            color: #475569;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-teal, #009982);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .important-note {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .important-note p {
+            color: #b45309;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .important-note p:last-child {
+            margin-bottom: 0;
+        }
+        .important-note strong {
+            font-weight: 700;
+        }
+
+        .syllabus-list {
+            list-style: none;
+            padding: 0;
+        }
+        .syllabus-list li {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--dark-blue, #143c5a);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .syllabus-list li span {
+            background: #eff6ff;
+            color: #3b82f6;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h4 {
+            color: var(--dark-blue, #143c5a);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .sidebar-pricing {
+            position: sticky;
+            top: 20px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .sidebar-pricing h3 {
+            color: var(--dark-blue, #143c5a);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .sidebar-btn {
+            display: block;
+            background: var(--primary-teal, #009982);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .sidebar-btn:hover {
+            background: #007a68;
+        }
+
+        @media (max-width: 968px) {
+            .master-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-pricing {
+                position: static;
+            }
+            .syllabus-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <a href="index.html" class="logo-text-link" style="text-decoration: none; color: inherit;">
+            <span>DERMO MÁSTER</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Másteres</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="master-detail-hero">
+        <div class="container">
+            <span style="background: rgba(0, 153, 130, 0.2); color: #4fd1c5; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem;">MÁSTER DE FORMACIÓN PERMANENTE</span>
+            <h1>Máster Internacional en Medicina Estética Online</h1>
+            <div class="badges-wrap">
+                <div class="badge-info"><i class="fa-solid fa-user-doctor"></i> Licenciados o Graduados en Medicina</div>
+                <div class="badge-info"><i class="fa-solid fa-award"></i> 60 ECTS (UCAM)</div>
+                <div class="badge-info"><i class="fa-solid fa-clock"></i> 1.500 horas</div>
+                <div class="badge-info"><i class="fa-solid fa-laptop"></i> Online</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="master-layout">
+        
+        <div class="content-left">
+            
+            <div class="section-block">
+                <h2>Descripción del Programa</h2>
+                <div class="highlight-box">
+                    <p><strong>Formato:</strong> 13 módulos teóricos.</p>
+                    <p><strong>Trabajo Fin de Máster:</strong> (TFM) de 6 créditos ECTS tutorizado por el Director.</p>
+                    <p><strong>Director:</strong> Dr. Rafael Linares García-Valdecasas (Profesor titular Univ. Complutense de Madrid y Univ. Rey Juan Carlos).</p>
+                    <p><strong>Modalidad:</strong> Online.</p>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2>Aviso Importante sobre la Modalidad Online</h2>
+                <div class="important-note">
+                    <p>* Los Diplomas Universitarios que expide la UCAM NO llevan impreso la palabra ON LINE en el diploma de dicho Titulo.</p>
+                    <p>* El Titulo de modalidad online (Título universitario enfocado a médicos/as de otros países que no quieren ejercer esta profesión en España y/o resto de Europa) posee 60 créditos ECTS / 1500 hs y no posee ninguna práctica clínica presencial. Es un Título que principalmente está diseñado y creado para médicos/as extranjeros que no pueden desplazarse o realizar las prácticas clínicas presenciales en nuestro país. Esta formación no cumple los requisitos legales que cualquier inspector de sanidad de cualquier Comunidad Autónoma de España le va a exigir para dirigir y/o aperturar legalmente una unidad U.48 Medicina Estética, y trabajar en esta área médica en España, y al no poseer práctica clínica presencial no permite solicitar la incorporación a la SEME, de hecho esta modalidad on line, al no poseer práctica clínica presencial, obviamente es una formación que no está avalada por la SEME.</p>
+                    <p><strong>IMPORTANTE:</strong> Dado que en el territorio español las competencias en materia sanitaria están transferidas a las Comunidades Autónomas si el estudiante selecciona cualquier formación de posgrado universitario Máster o Experto en modalidad on line es responsabilidad exclusivamente suya el informarse sobre si la normativa sanitaria del lugar donde vaya a ejercer el área de la formación en que se matricula le permite desarrollarla con una formación online o por el contrario le exige una modalidad semipresencial con prácticas presenciales incluidas en su programa académico de Máster o Experto que está usted seleccionando. Territorio Master SL no se hace responsable en ningún caso del resultado de su elección formativa, recomendando siempre a todos sus estudiantes que seleccionen formación médica que incluya práctica presencial dentro de su programa académico de Máster o Experto universitario de la Universidad Católica de Murcia (UCAM).</p>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2>Programa Académico</h2>
+                <ul class="syllabus-list">
+                    <li><span>5 ECTS</span> Asignatura 1 – Dermatología aplicada a la Medicina Estética</li>
+                    <li><span>4 ECTS</span> Asignatura 2 – Peelings Superficiales, Medios y Profundos en Medicina Estética</li>
+                    <li><span>4 ECTS</span> Asignatura 3 – Mesoterapia Facial y Corporal. Bioestimulación, Principios Activos. Plasma Rico en Plaquetas</li>
+                    <li><span>4 ECTS</span> Asignatura 4 – El Tejido Adiposo. Patologías Asociadas al Tejido Adiposo</li>
+                    <li><span>5 ECTS</span> Asignatura 5 – Las Aplicaciones de la Toxina Botulínica en Medicina Estética</li>
+                    <li><span>5 ECTS</span> Asignatura 6 – Implantes y Materiales de Relleno Tisulares, no sólidos, utilizados en Medicina Estética</li>
+                    <li><span>5 ECTS</span> Asignatura 7 – Hilos Tensores y Lipotransferencia utilizados en Medicina Estética</li>
+                    <li><span>4 ECTS</span> Asignatura 8 – Láser y Tecnología Aplicada a la Medicina Estética</li>
+                    <li><span>5 ECTS</span> Asignatura 9 – Patología Vascular: Venosa y Linfática. Ecodopler, Diagnostico en Medicina Estética</li>
+                    <li><span>4 ECTS</span> Asignatura 10 – Bases Preliminares en Cirugía de Trasplante Capilar</li>
+                    <li><span>3 ECTS</span> Asignatura 11 – Reanimación Cardiopulmonar en la Práctica Clínica de la Medicina Estética</li>
+                    <li><span>3 ECTS</span> Asignatura 12 – Seminarios Teórico–Prácticos de Técnicas y Tratamientos en la Práctica Clínica de la Medicina Estética</li>
+                    <li><span>3 ECTS</span> Asignatura 13 – Gestión y Marketing en un Centro Médico-Estético</li>
+                    <li><span>6 ECTS</span> Asignatura 14 – Investigación en Medicina Estética. Proyecto. Trabajo Fin de Máster (TFM)</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-item">
+                    <h4>¿Cuándo puedo inscribirme?</h4>
+                    <p>Puedes matricularte en 3 convocatorias al año: Septiembre, Enero o Mayo, pudiendo realizar los 365 días del año la solicitud de Preinscripción y Reserva de Plaza.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué documentos son necesarios?</h4>
+                    <p>Sólo necesitas DNI, NIE o PASAPORTE y el Título de Licenciado/Graduado en medicina. En el caso de que el Título sea extranjero debe acompañarse del Certificado de Homologación.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Cómo son las clases online?</h4>
+                    <p>Nuestros contenidos son elaborados e impartidos por expertos profesional de reconocido prestigio en su área. Cada asignatura es minuciosamente desarrollada de forma conjunta por el director médico del máster y un especialista de dicha materia. Además durante todo el máster contarás con la ayuda y el apoyo del director médico mediante tutorías virtuales y un sistema de consultas en la plataforma e-Learning.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Quién expide el Título?</h4>
+                    <p>El temario está evaluado y aprobado por la Universidad Católica San Antonio de Murcia (UCAM), quién le otorga 60 créditos ECTS, como centro universitario que pertenece al Espacio Europeo de Educación Superior (EEES).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-right">
+            <div class="sidebar-pricing">
+                <h3>Información de Matrícula</h3>
+                <p style="font-size: 0.95rem; color: #475569; text-align: center; margin-bottom: 20px;">Plazas limitadas. Inicio en mayo de 2026.</p>
+                
+                <p style="font-size: 0.9rem; color: #475569; line-height: 1.6; margin-bottom: 20px;">Para matricularte en el Máster Internacional en Medicina Estética en modalidad Online, solo tienes que cumplimentar y enviarnos por email la Solicitud de Preinscripción y Reserva de Plaza junto con el recibo de pago.</p>
+                
+                <a href="contacto.html" class="sidebar-btn">Solicitar información</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+                <li><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +34 656 438 139</li>
+                <li><span class="footer-icon"><i class="fa-regular fa-envelope"></i></span> info@dermomaster.com</li>
+                <li><span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span> C/ Torquemada 16 – Madrid</li>
+                <li><span class="footer-icon"><i class="fa-brands fa-twitter"></i></span> @dermomaster</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Formación</h3>
+            <ul>
+                <li><a href="#">Medicina Estética, Antienvejecimiento y Nutrición</a></li>
+                <li><a href="#">Medicina Estética (Online)</a></li>
+                <li><a href="#">Curso práctico de Especialización en Medicina Estética (Presencial)</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar</a></li>
+                <li><a href="#">Tricología y Cirugía de Trasplante Capilar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Programas de Enfermería</h3>
+            <ul>
+                <li><a href="#">Cirugía de Trasplante Capilar y Tricología en Enfermería</a></li>
+                <li><a href="#">Experto Universitario de Enfermería en Cirugía de Injerto Capilar (Online)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Semipresencial)</a></li>
+                <li><a href="#">Técnicas Avanzadas en Implantes Capilares para Técnico Auxiliar (Online)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Clínicas de Prácticas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon"></div>
+                    <strong>DERMO MÁSTER</strong>
+                </div>
+                <p>© 2026 Dermo Máster. Proyecto de prácticas.</p>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

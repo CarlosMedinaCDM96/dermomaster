@@ -1542,3 +1542,465 @@
     z-index: 10;     
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3); 
 }
+
+
+
+
+
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS PARA LA PÁGINA INTERNA DEL MÁSTER EN TRICOLOGÍA
+   ========================================================================== */
+
+/* Extensión de variables reutilizando tus tokens de estilos existentes */
+:root {
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-dark);
+}
+
+/* Rediseño del Navbar para que enlace limpiamente */
+.navbar nav ul {
+    align-items: center;
+}
+
+/* HERO SECCIÓN DETALLADA */
+.master-hero-detail {
+    background-color: var(--dark-blue);
+    background-image: 
+        linear-gradient(var(--dark-blue-overlay), var(--dark-blue-overlay)), 
+        url('https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.master-hero-detail h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 1rem auto 1.5rem auto;
+    max-width: 850px;
+}
+
+.master-hero-detail p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.6;
+}
+
+.hero-meta-strip {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.meta-pill {
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+
+/* DISTRIBUCIÓN EN 2 COLUMNAS (LAYOUT) */
+.master-main-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 4rem;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    align-items: start;
+}
+
+.info-block {
+    margin-bottom: 55px;
+}
+
+.info-block h2 {
+    color: var(--dark-blue);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.info-block p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Tarjeta de Requisito Exclusivo Médicos */
+.requisito-card {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+
+.requisito-card h4 {
+    color: #b45309;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.requisito-card p {
+    color: #78350f;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Separación y Estilo de Metodología */
+.methodology-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.method-card-box {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.method-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.dot-teal {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-teal);
+    border-radius: 50%;
+}
+
+.method-card-box h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.method-card-box p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ACORDEÓN / DESGLOSE DE MÓDULOS DE PLAN DE ESTUDIOS */
+.syllabus-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.syllabus-row {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    transition: border-color 0.3s ease;
+}
+
+.syllabus-row:hover {
+    border-color: var(--primary-teal);
+}
+
+.syllabus-header-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.m-num {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--primary-teal);
+    background-color: #e6f6f4;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.syllabus-header-row h4 {
+    font-size: 1.05rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin: 0;
+}
+
+.syllabus-body-row p {
+    font-size: 0.92rem;
+    margin: 0;
+    padding-left: 3.2rem;
+    line-height: 1.6;
+}
+
+/* Bloque Prácticas Clínicas */
+.practical-bullets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.p-bullet-box {
+    background-color: #f0fdfa;
+    border: 1px solid #ccfbf1;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.p-bullet-box strong {
+    font-size: 0.95rem;
+    color: var(--dark-blue);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.p-bullet-box p {
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* SIDEBAR LATERAL FLOTANTE STICKY */
+.master-sidebar {
+    position: relative;
+}
+
+.sticky-info-card {
+    position: sticky;
+    top: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.sticky-info-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.card-bar {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.technical-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.technical-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+}
+
+.technical-list li span {
+    color: var(--text-muted);
+}
+
+.sidebar-warning {
+    background-color: #fff7ed;
+    border: 1px solid #ffedd5;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #c2410c;
+    line-height: 1.4;
+    margin-bottom: 1.8rem;
+}
+
+.btn-sidebar-contact {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-teal);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-sidebar-contact:hover {
+    background-color: var(--primary-teal-hover);
+}
+
+/* RESPONSIVE ADAPTATIVO */
+@media (max-width: 992px) {
+    .master-main-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .sticky-info-card {
+        position: static;
+    }
+    .methodology-split, .practical-bullets-grid {
+        grid-template-columns: 1fr;
+    }
+    .syllabus-body-row p {
+        padding-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+
+.programas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .card-programa {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        overflow: hidden; /* Para que la imagen respete las esquinas redondeadas */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+    .card-programa:hover { transform: translateY(-5px); }
+    
+    /* Estilo de la imagen */
+    .card-img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    
+    .card-content { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
+    .card-programa h3 { color: #143c5a; margin-bottom: 15px; font-size: 1.4rem; }
+    .card-programa p { color: #64748b; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6; flex-grow: 1; }
+    .card-stats { background: #f8fafc; padding: 10px; border-radius: 8px; margin-bottom: 20px; font-weight: 700; color: #009982; font-size: 0.9rem; text-align: center; }
+    
+    .btn-card { display: block; padding: 12px; background: #143c5a; color: white; text-align: center; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    .btn-card:hover { background: #009982; }
+
+
+
+    /* Estilos para la expansión interactiva del Blog */
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: auto; /* Permite que crezca */
+    position: relative;
+    overflow: hidden;
+}
+
+.full-content {
+    display: none;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eef2f6;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Estado expandido */
+.card.expanded {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #00938a; /* Color de tu marca */
+}
+
+.card.expanded .full-content {
+    display: block;
+}
+
+.card.expanded .card-footer span {
+    color: #00938a;
+    font-weight: bold;
+}
+
+.card-footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #a0acb5;
+}
+
+/* Contenedor principal: El "Grid" que alinea todo */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 40px 5%;
+    align-items: stretch; /* ESTO asegura que todas las tarjetas midan lo mismo */
+}
+
+/* Tarjeta individual */
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column; /* Organiza elementos verticalmente */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Badge */
+.card-badge {
+    color: #009982;
+    font-weight: 800;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Títulos y texto */
+.card h3 { color: #143c5a; margin-bottom: 15px; font-size: 1.25rem; }
+.card-description { color: #64748b; margin-bottom: 15px; font-size: 0.95rem; flex-grow: 1; }
+
+/* Contenido oculto */
+.full-content {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #edf2f7;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+/* Footer de la tarjeta */
+.card-footer { margin-top: auto; padding-top: 15px; font-size: 0.8rem; color: #94a3b8; }
+
+/* Efecto al hacer clic */
+.card.expanded {
+    border-color: #009982;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.card.expanded .full-content { display: block; }
